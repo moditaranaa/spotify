@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/014024ef11.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid mb50px">
+                <a class="navbar-brand" href="#">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png"
+                        height="50px" alt="">
+                </a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" style="width: 40px;"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon p-3" style="margin-left: -8px;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Ninja <br>
+                                <strong>Studio</strong></a>
+                        </li>
+                        <li class="nav-item favre-item">
+                            <a class="nav-link active text-white mt-2 ms-5" aria-current="page" href="#">Favourites</a>
+                        </li>
+                    </ul>
+                    <form action="">
+                        <span id="search-bar" class="bg-primary">
+                            <i class="fa-solid fa-magnifying-glass text-white mx-2"></i>
+                            <input type="text" name="" id="" placeholder="Search" style="border: none; width: 200px;">
+                            <i class="fa-solid fa-microphone text-white mx-2"></i>
+                        </span>
+                    </form>
+                    <span id="bell-icon"><i class=" text-white fa-regular fa-bell"></i></span>
+                    <span class="profile-pic">
+                        <img src="./images/profile pic.webp" alt="">
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN HOME PAGE -->
+    <section class="outer-container ">
+
+        <!-- Album Section -->
+        <section class="album ms-5">
+
+            <!-- First Row -->
+            <div class="first-row">
+                <div class="mb-3">
+                    <img src="./images/salsa.jfif" class="img-size" alt="">
+                </div>
+                <div class="mb-3">
+                    <img src="./images/rock.jfif" class="img-size" alt="">
+                </div>
+                <div class="mb-3">
+                    <img src="./images/metal.jfif" class="img-size" alt="">
+                </div>
+            </div>
+
+            <!-- Latest Release -->
+            <div>
+                <h4 class="mt-5 mb-3 text-white">Latest Release</h4>
+            </div>
+            <div class="latest-release mb50px">
+                <div class="card mb-3 latest-one">
+                    <div class="row g-0">
+                        <div class=" col-md-4 latest-release-container">
+                            <div class=" latest-release-image">
+                                <img src="./images/kesariya.jfif" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="play-btn">
+                                <a href="#footer">
+                                    <i class="fa-solid fa-play"></i>
+                                    
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body cardst">
+                                <span class="text-white latest-btn">
+                                    <div class="dropdown">
+                                        <button class="btn btn-dot" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false" style="border: none;">
+                                            <i class="fa-solid fa-ellipsis text-white"></i>
+                                            <p class="text-white">4:44</p>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-play me-3"></i>Play Now</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-plus me-3"></i>Add To Queue</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-list me-3"></i>Add To Queue</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-circle-question me-3"></i>Get info</a></li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <h5 class="card-title text-white mt-5">Onism</h5>
+                                <p class="card-text text-secondary">August 11th,2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 latest-one">
+                    <div class="row g-0">
+                        <div class=" col-md-4 latest-release-container">
+                            <div class=" latest-release-image">
+                                <img src="./images/kesariya.jfif" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="play-btn">
+                                <a href="#footer">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body cardst">
+                                <span class="text-white latest-btn">
+                                    <div class="dropdown">
+                                        <button class="btn btn-dot" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false" style="border: none;">
+                                            <i class="fa-solid fa-ellipsis text-white"></i>
+                                            <p class="text-white">4:44</p>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-play me-3"></i>Play Now</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-plus me-3"></i>Add To Queue</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-list me-3"></i>Add To Queue</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-circle-question me-3"></i>Get info</a></li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <h5 class="card-title text-white mt-5">Onism</h5>
+                                <p class="card-text text-secondary">August 11th,2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 latest-one">
+                    <div class="row g-0">
+                        <div class=" col-md-4 latest-release-container">
+                            <div class=" latest-release-image">
+                                <img src="./images/kesariya.jfif" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="play-btn">
+                                <a href="#footer">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body cardst">
+                                <span class="text-white latest-btn">
+                                    <div class="dropdown">
+                                        <button class="btn btn-dot" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false" style="border: none;">
+                                            <i class="fa-solid fa-ellipsis text-white"></i>
+                                            <p class="text-white">4:44</p>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-play me-3"></i>Play Now</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-plus me-3"></i>Add To Queue</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-list me-3"></i>Add To Queue</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-circle-question me-3"></i>Get info</a></li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <h5 class="card-title text-white mt-5">Onism</h5>
+                                <p class="card-text text-secondary">August 11th,2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 latest-one">
+                    <div class="row g-0">
+                        <div class=" col-md-4 latest-release-container">
+                            <div class=" latest-release-image">
+                                <img src="./images/kesariya.jfif" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="play-btn">
+                                <a href="#footer">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body cardst">
+                                <span class="text-white latest-btn">
+                                    <div class="dropdown">
+                                        <button class="btn btn-dot" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false" style="border: none;">
+                                            <i class="fa-solid fa-ellipsis text-white"></i>
+                                            <p class="text-white">4:44</p>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-play me-3"></i>Play Now</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-plus me-3"></i>Add To Queue</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-list me-3"></i>Add To Queue</a></li>
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa-solid fa-circle-question me-3"></i>Get info</a></li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <h5 class="card-title text-white mt-5">Onism</h5>
+                                <p class="card-text text-secondary">August 11th,2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Popular Artist Section -->
+            <div>
+                <h4 class="mt-5 mb-3 text-white">Popular Artists</h4>
+            </div>
+            <div class="popular-artist mb50px">
+                <div class="artist">
+                    <div class="artist-img">
+                        <img class="artist-img-size shadow" src="./artist/charlie.jfif" alt="">
+                    </div>
+                    <div class="play">
+                        <a href="singleartist.html">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                    <p class="text-white text-center mt-2">Charlie Puth</p>
+                </div>
+                <div class="artist">
+                    <div class="artist-img">
+                        <img class="artist-img-size shadow" src="./artist/cold2.jfif" alt="">
+                    </div>
+                    <div class="play">
+                        <a href="singleartist.html">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                    <p class="text-white text-center mt-2">ColdPlay</p>
+                </div>
+                <div class="artist">
+                    <div class="artist-img">
+                        <img class="artist-img-size shadow" src="./artist/justin.jfif" alt="">
+                    </div>
+                    <div class="play">
+                        <a href="singleartist.html">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                    <p class="text-white text-center mt-2">Justin</p>
+                </div>
+                <div class="artist">
+                    <div class="artist-img">
+                        <img class="artist-img-size shadow" src="./artist/ed.jfif" alt="">
+                    </div>
+                    <div class="play">
+                        <a href="singleartist.html">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                    <p class="text-white text-center mt-2">Ed Sheeran</p>
+                </div>
+                <div class="artist">
+                    <div class="artist-img">
+                        <img class="artist-img-size shadow" src="./artist/download.jfif" alt="">
+                    </div>
+                    <div class="play">
+                        <a href="singleartist.html">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                    <p class="text-white text-center mt-2">Bruno Mars</p>
+                </div>
+
+
+            </div>
+
+            <!-- Stations-Section -->
+            <div class="station mb50px">
+                <img src="./station/music-station.jfif" alt="" height="150rem" width="155rem" class="m-2">
+                <img src="./station/chill.jfif" alt="" class="station-img-size mt-3">
+                <div class="station-text text-white" id="chill">Chill</div>
+                <img src="./station/love.jfif" alt="" class="station-img-size mt-3">
+                <div class="station-text text-white" id="love">Love</div>
+                <img src="./station/pop.jfif" alt="" class="station-img-size mt-3">
+                <div class="station-text text-white" id="pop">Pop</div>
+                <img src="./station/retro.jfif" alt="" class="station-img-size mt-3">
+                <div class="station-text text-white" id="retro">Retro</div>
+                <img src="./station/rock.jfif" alt="" class="station-img-size mt-3">
+                <div class="station-text text-white" id="rock">Rock</div>
+                <img src="./station/workout.jfif" alt="" class="station-img-size mt-3">
+                <div class="station-text text-white" id="workout">Workout</div>
+            </div>
+
+            <!-- Category -->
+            <div class="category-container mb50px">
+                <img src="./category/electronic.jfif" alt="">
+                <div class="category-text text-white" id="electronic">Electronic</div>
+                <img src="./category/party.jfif" alt="">
+                <div class="category-text text-white" id="party">Party</div>
+                <img src="./category/roadtrip.jfif" alt="">
+                <div class="category-text text-white" id="roadtrip">Road Trip</div>
+            </div>
+
+            <!-- Latest English -->
+            <div>
+                <h4 class=" mb-3 text-white">Latest English</h4>
+            </div>
+            <div class="latest-english">
+                <div class="english-song">
+                    <img src="./english/flower1.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white"> Poison</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+                <div class="english-song">
+                    <img src="./english/flower2.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white"> Poison</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+                <div class="english-song">
+                    <img src="./english/flower3.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white"> Poison</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+                <div class="english-song">
+                    <img src="./english/flower4.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white"> Poison</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+                <div class="english-song">
+                    <img src="./english/flower5.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white"> Poison</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+                <div class="english-song">
+                    <img src="./english/flower6.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white"> Poison</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+            </div>
+
+            <!-- Latest Hindi -->
+            <div>
+                <h4 class="mb-3 text-white">Latest Hindi</h4>
+            </div>
+            <div class="latest-english" style="margin-bottom: 100px;">
+                <div class="english-song">
+                    <img src="./english/flower1.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white">Dil Se Re</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+                <div class="english-song">
+                    <img src="./english/flower2.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white">Dil Se Re</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+                <div class="english-song">
+                    <img src="./english/flower3.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white">Dil Se Re</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+                <div class="english-song">
+                    <img src="./english/flower4.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white">Dil Se Re</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+                <div class="english-song">
+                    <img src="./english/flower5.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white">Dil Se Re</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+                <div class="english-song">
+                    <img src="./english/flower6.jfif" alt="" class="english-img-size">
+                    <p class="song-name text-white">Dil Se Re</p>
+                    <p class="song-date text-white">AUG 11th,2017</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Queue Section -->
+        <section class="queue me-5">
+            <span class="queue-header">
+                <h3 class="text-white mb-5">Queue</h3>
+                <p class="text-white">
+                <div class="dropdown qdropdown ms-5">
+                    <button class="btn dropdown-toggle queue-btn ms-5" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Queue
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">PlayList
+                                <hr>
+                            </a></li>
+                        <li><a class="dropdown-item" href="#">Favourite Songs</a></li>
+                    </ul>
+                </div>
+                </p>
+            </span>
+            <div class="inner-queue text-white">
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">01</li>
+                    <li><img src="./english/flower1.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">02</li>
+                    <li><img src="./english/flower2.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">03</li>
+                    <li><img src="./english/flower3.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">04</li>
+                    <li><img src="./english/flower4.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">05</li>
+                    <li><img src="./english/flower5.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">06</li>
+                    <li><img src="./english/flower6.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">07</li>
+                    <li><img src="./english/flower1.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">08</li>
+                    <li><img src="./english/flower2.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">09</li>
+                    <li><img src="./english/flower3.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">10</li>
+                    <li><img src="./english/flower4.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">11</li>
+                    <li><img src="./english/flower5.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">12</li>
+                    <li><img src="./english/flower6.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">13</li>
+                    <li><img src="./english/flower1.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">14</li>
+                    <li><img src="./english/flower2.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">15</li>
+                    <li><img src="./english/flower3.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">16</li>
+                    <li><img src="./english/flower4.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">17</li>
+                    <li><img src="./english/flower5.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">18</li>
+                    <li><img src="./english/flower6.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">19</li>
+                    <li><img src="./english/flower1.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">20</li>
+                    <li><img src="./english/flower2.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">21</li>
+                    <li><img src="./english/flower3.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">22</li>
+                    <li><img src="./english/flower4.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">23</li>
+                    <li><img src="./english/flower5.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">24</li>
+                    <li><img src="./english/flower6.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">25</li>
+                    <li><img src="./english/flower1.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">26</li>
+                    <li><img src="./english/flower2.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">27</li>
+                    <li><img src="./english/flower3.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">28</li>
+                    <li><img src="./english/flower4.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">29</li>
+                    <li><img src="./english/flower5.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-hear"></i></li>
+                    </span>
+                </ul>
+                <ul type="none" class="ulq p-0">
+                    <li class="me-3 text-secondary">30</li>
+                    <li><img src="./english/flower6.jfif" height="80px" width="80px" alt="" class="me-3"></li>
+                    <li><strong>Mirage</strong> <br> Else</li>
+                    <span class="like">
+                        <li><i class="fa-sharp fa-regular fa-heart"></i></li>
+                    </span>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <Footer id="footer">
+        <audio src="./images/kesariya.mp3" autoplay></audio>
+        <div class=" footer-section bg-secondary">
+            <!-- Song Image & Name-->
+            <div class="song-image-name ms-3">
+                <ul type="none" class="sinul">
+                    <li><img src="./images/kesariya.jfif" height="100px" width="100px" alt="" class="me-3"></li>
+                    <li class="mt-4 text-white"><strong>Onism by John</strong>
+                        <i class="fa-regular fa-heart text-white ms-3 me-1"></i>
+                        <i class="fa-solid fa-ban text-white"></i><br>John Lenon
+                    </li>
+                </ul>
+            </div>
+            <!-- Media Controls -->
+            <div class="media-control ms-5">
+                <ul type="none" class="p-0">
+                    <li class="mt-3 ms-5">
+                        <span style="font-size: 1.5rem; color: white;">
+                            <i class="fa-solid fa-shuffle mt-3 mx-5"></i>
+                            <i class="fa-solid fa-backward me-5"></i>
+                            <i class="fa-regular fa-circle-pause me-5 shadow" style="font-size: 2.2rem;"></i>
+                            <i class="fa-solid fa-forward me-5"></i>
+                            <i class="fa-solid fa-repeat"></i>
+                        </span>
+                    </li>
+                    <li class="mt-4 ms-5">
+                        <span class=" mx-3 text-white">1:39</span>
+                        <input type="range" min="1" max="100" value="50" style="width: 60%;">
+                        <span class=" mx-3 text-white">4:44</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Small Media Control -->
+            <div class="small-media-control">
+                <ul type="none">
+                    <li>
+                        <i class="fa-solid fa-list-check me-3"></i>
+                        <i class="fa-solid fa-computer me-3"></i>
+                        <i class="fa-solid fa-volume-high me-3"></i>
+                        <input type="range" min="1" max="100" value="50">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center mx-3"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </Footer>
+
+
+    <!-- JS-CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

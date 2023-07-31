@@ -1,0 +1,180 @@
+body {
+  background-color: #232846;
+}
+/* Common-Class */
+.mb50px {
+  margin-bottom: 50px !important;
+}
+
+/* Header */
+#search-bar {
+  display: inline-block;
+  width: 17rem !important;
+  border-radius: 20px;
+  background-color: #2d2d54 !important;
+  margin-right: 1rem;
+}
+#search-bar input {
+  background-color: inherit;
+}
+#bell-icon {
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+.profile-pic {
+  height: 4rem;
+  width: 4.3rem;
+  border-radius: 50% !important;
+}
+.profile-pic img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+
+/* MAIN BODY SECTION */
+.outer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: auto;
+}
+@media screen and (max-width: 950px) {
+  .outer-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/* Left Section */
+.left-section {
+  width: 68%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 950px) {
+  .left-section {
+    width: 100%;
+  }
+  .left-sec-artist-pic {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .track-time {
+    display: none;
+  }
+  .ulq li img {
+    display: none;
+  }
+}
+
+/* Artist Info */
+.artist-info {
+  width: 90%;
+  height: auto;
+}
+.card {
+  height: inherit;
+  background-color: #2d2d54 !important;
+  border: none;
+}
+.card img {
+  height: 55vh;
+}
+.parents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Artitst Info Songs List */
+
+.inner-queue {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: inherit;
+  height: auto;
+  width: 95%;
+}
+.single-list {
+  background-color: #12293c;
+
+  width: 100%;
+}
+.ulq li {
+  display: inline-block;
+}
+.ulq {
+  position: relative;
+}
+.like {
+  position: absolute;
+  right: 0%;
+  top: 40%;
+}
+
+/* Right Section */
+.right-section {
+  width: 28%;
+  height: auto;
+  margin-right: 2rem;
+}
+@media screen and (max-width: 950px) {
+  .right-section {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+/* Similar Artist Title */
+.saul {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+.saul li {
+  display: inline-block;
+}
+
+/* Similar Artist List */
+.similar-artist-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.salul li {
+  display: inline-block;
+  height: 2rem;
+}
+.list1 {
+  position: relative;
+}
+.latest-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Recently Played */
+.right-inner-queue {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  height: 25rem;
+}
+.right-inner-queue::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  #ulq img {
+    display: none;
+  }
+}
